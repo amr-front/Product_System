@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d4754a83ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styel.css" />
+    <title>Product System</title>
+  </head>
+  <body>
+    <section aria-label="product data" class="parent">
+      <article class="product-name">
+        <input type="text" class="i" id="name" placeholder="Name" />
+      </article>
+
+      <article class="product-price">
+        <input type="number" class="i" id="price" placeholder="Price" />
+        <input type="number" class="i" id="discount" placeholder="Discount" />
+        <p>Total:<span class="total-price">0.00</span></p>
+      </article>
+
+      <article class="product-count">
+        <input type="number" id="count" placeholder="Count" />
+      </article>
+      <article class="product-category">
+        <input type="text" id="category" class="i" placeholder="Category" />
+      </article>
+
+      <article class="search-bar">
+        <input type="search" id="search" placeholder="Searching by Name..." />
+        <div class="search-buttons"></div>
+      </article>
+
+      <article class="create-button">
+        <button class="change di">Update Value</button>
+        <button type="button" id="create">Create</button>
+      </article>
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Discount</td>
+          <td>Total</td>
+          <td>Category</td>
+          <td>Update</td>
+          <td>Delete</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="js.js"></script>
+  </body>
+</html>
